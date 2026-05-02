@@ -1,47 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>MealMate – Privacy Policy</title>
-<style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f0f0f; color: #e0e0e0; line-height: 1.7; }
-  .container { max-width: 780px; margin: 0 auto; padding: 48px 24px 80px; }
-  .lang-switcher { display: flex; gap: 12px; margin-bottom: 40px; }
-  .lang-btn { padding: 8px 20px; border-radius: 20px; border: 1.5px solid #FF6B6B; background: transparent; color: #FF6B6B; cursor: pointer; font-size: 14px; font-weight: 600; transition: all 0.2s; }
-  .lang-btn.active { background: #FF6B6B; color: #fff; }
-  .logo { font-size: 36px; margin-bottom: 8px; }
-  h1 { font-size: 28px; font-weight: 800; color: #fff; margin-bottom: 8px; }
-  .subtitle { color: #888; font-size: 14px; margin-bottom: 40px; }
-  h2 { font-size: 18px; font-weight: 700; color: #FF6B6B; margin: 36px 0 12px; border-left: 3px solid #FF6B6B; padding-left: 12px; }
-  p { margin-bottom: 12px; color: #ccc; }
-  ul { margin: 8px 0 12px 20px; color: #ccc; }
-  li { margin-bottom: 6px; }
-  .highlight { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 12px; padding: 16px 20px; margin: 16px 0; }
-  .contact { color: #FF6B6B; }
-  .lang-section { display: none; }
-  .lang-section.active { display: block; }
-  footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #2a2a2a; color: #555; font-size: 13px; text-align: center; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeCook – Privacy Policy</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0f0f18;
+      color: #e0e0e0;
+      line-height: 1.7;
+    }
+    .container { max-width: 780px; margin: 0 auto; padding: 48px 24px 80px; }
+
+    /* Language switcher */
+    .lang-switcher { display: flex; gap: 12px; margin-bottom: 40px; }
+    .lang-btn {
+      padding: 8px 20px; border-radius: 20px;
+      border: 1.5px solid #FF6B9D; background: transparent;
+      color: #FF6B9D; cursor: pointer; font-size: 14px; font-weight: 600;
+      transition: all 0.2s;
+    }
+    .lang-btn.active { background: #FF6B9D; color: #fff; }
+
+    /* Header */
+    .header { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+    .logo { width: 52px; height: 52px; border-radius: 12px; display: block; }
+    h1 { font-size: 28px; font-weight: 800; color: #fff; margin-bottom: 8px; }
+    .subtitle { color: #888; font-size: 14px; margin-bottom: 40px; }
+
+    h2 {
+      font-size: 18px; font-weight: 700; color: #FF6B9D;
+      margin: 36px 0 12px; border-left: 3px solid #FF6B9D; padding-left: 12px;
+    }
+    p { margin-bottom: 12px; color: #ccc; }
+    ul { margin: 8px 0 12px 20px; color: #ccc; }
+    li { margin-bottom: 6px; }
+    strong { color: #fff; }
+    .highlight {
+      background: #1a1a2e; border: 1px solid #2a2a3a;
+      border-radius: 12px; padding: 16px 20px; margin: 16px 0;
+    }
+    .contact { color: #FF6B9D; }
+    footer {
+      margin-top: 60px; padding-top: 20px;
+      border-top: 1px solid #2a2a3a; color: #555; font-size: 13px; text-align: center;
+    }
+
+    /* Language sections */
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+  </style>
 </head>
 <body>
 <div class="container">
 
   <div class="lang-switcher">
-    <button class="lang-btn active" onclick="switchLang('en')">English</button>
-    <button class="lang-btn" onclick="switchLang('es')">Español</button>
+    <button class="lang-btn active" onclick="setLang('en')">English</button>
+    <button class="lang-btn" onclick="setLang('es')">Español</button>
   </div>
 
-  <!-- ═══════════════ ENGLISH ═══════════════ -->
-  <div id="en" class="lang-section active">
-    <div class="logo">🍽️</div>
-    <h1>MealMate – Privacy Policy</h1>
-    <p class="subtitle">Last updated: April 3, 2026</p>
+  <!-- ENGLISH -->
+  <div class="lang-section active" id="lang-en">
+    <div class="header">
+      <img src="https://ginobuyatti.github.io/personal-ai-chef-privacy/Icon%201024.png" alt="WeCook" class="logo" />
+      <div>
+        <h1>WeCook – Privacy Policy</h1>
+        <p class="subtitle">Last updated: May 2, 2026</p>
+      </div>
+    </div>
 
     <h2>1. Introduction</h2>
-    <p>MealMate ("we", "us", "our") is a meal planning app for couples and individuals. This Privacy Policy explains how we collect, use, and protect your personal information. By using MealMate, you agree to this policy.</p>
-    <p><strong>Age restriction:</strong> MealMate is not directed at children under 13 years of age. We do not knowingly collect personal data from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately.</p>
+    <p>WeCook ("we", "us", "our") is a meal planning app for couples and individuals. This Privacy Policy explains how we collect, use, and protect your personal information. By using WeCook, you agree to this policy.</p>
+    <p><strong>Age restriction:</strong> WeCook is not directed at children under 13 years of age. We do not knowingly collect personal data from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately.</p>
 
     <h2>2. Data We Collect</h2>
     <div class="highlight">
@@ -67,7 +99,7 @@
     </ul>
 
     <h2>4. Artificial Intelligence (AI) Features</h2>
-    <p>MealMate uses <strong>Google Gemini AI</strong> to power the following features:</p>
+    <p>WeCook uses Google Gemini AI to power the following features:</p>
     <ul>
       <li>Automatic macro calculation from recipe ingredients</li>
       <li>AI Chef Assistant (conversational recipe suggestions)</li>
@@ -75,43 +107,45 @@
       <li>Photo-based food recognition and macro analysis</li>
     </ul>
     <div class="highlight">
-      <p>⚠️ <strong>Important:</strong> AI-generated content (recipes, macro estimates, meal suggestions) may not be 100% accurate. Always consult a qualified nutritionist or healthcare professional for medical dietary advice. MealMate is not a medical app.</p>
+      ⚠️ <strong>Important:</strong> AI-generated content (recipes, macro estimates, meal suggestions) may not be 100% accurate. Always consult a qualified nutritionist or healthcare professional for medical dietary advice. WeCook is not a medical app.
     </div>
 
     <h2>5. Push Notifications</h2>
-    <p>MealMate uses push notifications for:</p>
+    <p>WeCook uses push notifications for:</p>
     <ul>
       <li>Daily meal reminders (configurable time)</li>
       <li>Partner recipe proposals</li>
       <li>Recipe match alerts (when both partners agree)</li>
     </ul>
-    <p>You can enable or disable notifications at any time in your device's Settings or in the MealMate Profile section.</p>
+    <p>You can enable or disable notifications at any time in your device's Settings or in the WeCook Profile section.</p>
 
     <h2>6. Third-Party Services</h2>
     <p>We use the following third-party services. Each has its own privacy policy:</p>
     <ul>
-      <li><strong>Firebase / Google Firestore</strong> – Database, authentication, and analytics. Servers located in the United States. <a href="https://firebase.google.com/support/privacy" style="color:#FF6B6B">Privacy Policy</a></li>
-      <li><strong>Firebase Analytics (Google Analytics)</strong> – App usage analytics (session data, screen views, events). Data is anonymized and aggregated.</li>
-      <li><strong>Google Gemini AI</strong> – AI-powered features. Your ingredient lists and meal queries are sent to Gemini for processing. <a href="https://policies.google.com/privacy" style="color:#FF6B6B">Privacy Policy</a></li>
+      <li><strong>Firebase / Google Firestore</strong> – Database, authentication, and analytics. Servers located in the United States.</li>
+      <li><strong>Firebase Analytics</strong> – App usage analytics (session data, screen views, events). Data is anonymized and aggregated.</li>
+      <li><strong>Google Gemini AI</strong> – AI-powered features. Your ingredient lists and meal queries are sent to Gemini for processing.</li>
       <li><strong>Spoonacular API</strong> – Recipe database. Searches and queries are sent to Spoonacular servers.</li>
-      <li><strong>RevenueCat</strong> – Subscription management. Processes your subscription status (not payment details — those are handled by Apple/Google). <a href="https://www.revenuecat.com/privacy" style="color:#FF6B6B">Privacy Policy</a></li>
+      <li><strong>RevenueCat</strong> – Subscription management. Processes your subscription status (not payment details — those are handled by Apple/Google).</li>
+      <li><strong>Resend</strong> – Transactional email delivery (welcome, renewal, billing notifications).</li>
       <li><strong>Expo / EAS</strong> – App delivery and over-the-air updates.</li>
     </ul>
 
     <h2>7. Data Security</h2>
-    <p>We take reasonable measures to protect your data:</p>
-    <ul>
-      <li>All data in transit is encrypted using TLS/HTTPS</li>
-      <li>Firebase Firestore uses Google's industry-standard encryption at rest</li>
-      <li>Authentication is handled by Firebase Auth (Google Sign-In OAuth 2.0)</li>
-      <li>API keys are stored as secrets in our build system and are never exposed in the app bundle</li>
-    </ul>
+    <div class="highlight">
+      <ul>
+        <li>All data in transit is encrypted using TLS/HTTPS</li>
+        <li>Firebase Firestore uses Google's industry-standard encryption at rest</li>
+        <li>Authentication is handled by Firebase Auth (Google Sign-In OAuth 2.0)</li>
+        <li>API keys are stored as secrets in our build system and are never exposed in the app bundle</li>
+      </ul>
+    </div>
 
     <h2>8. International Data Transfers</h2>
-    <p>Firebase and Google services store data on servers located primarily in the United States. If you are located outside the US (including the European Union), your data will be transferred to and processed in the US. By using MealMate, you consent to this transfer. We rely on Google's Standard Contractual Clauses (SCCs) for GDPR compliance.</p>
+    <p>Firebase and Google services store data on servers located primarily in the United States. If you are located outside the US (including the European Union), your data will be transferred to and processed in the US. By using WeCook, you consent to this transfer. We rely on Google's Standard Contractual Clauses (SCCs) for GDPR compliance.</p>
 
     <h2>9. Couple / Partner Data Sharing</h2>
-    <p>When you link with a partner in MealMate:</p>
+    <p>When you link with a partner in WeCook:</p>
     <ul>
       <li>Your recipe proposals and votes are visible to your partner</li>
       <li>Your agreed recipes and daily plans are shared</li>
@@ -121,7 +155,6 @@
     <p>You can unlink from your partner at any time in the Couple section of the app.</p>
 
     <h2>10. Your Rights (GDPR & CCPA)</h2>
-    <p>Depending on your location, you may have the following rights:</p>
     <ul>
       <li><strong>Access:</strong> Request a copy of your personal data</li>
       <li><strong>Correction:</strong> Request correction of inaccurate data</li>
@@ -130,10 +163,10 @@
       <li><strong>Opt-out:</strong> Opt out of analytics tracking</li>
       <li><strong>California residents (CCPA):</strong> We do not sell your personal information to third parties</li>
     </ul>
-    <p>To exercise any of these rights, contact us at <span class="contact">ginobuyatti@gmail.com</span>.</p>
+    <p>To exercise any of these rights, contact us at <span class="contact">hello@we-cook.app</span></p>
 
     <h2>11. Account Deletion</h2>
-    <p>You can delete your account at any time from Profile → Danger Zone → Delete Account. This will permanently delete:</p>
+    <p>You can delete your account at any time from <strong>Profile → Danger Zone → Delete Account</strong>. This will permanently delete:</p>
     <ul>
       <li>Your profile and authentication credentials</li>
       <li>All meal history, recipes, and macro data</li>
@@ -145,142 +178,112 @@
     <p>We may update this Privacy Policy from time to time. We will notify you of significant changes via the app or email. The "Last updated" date at the top of this page indicates when the policy was last revised.</p>
 
     <h2>13. Contact</h2>
-    <div class="highlight">
-      <p>For any privacy-related questions or requests:</p>
-      <p>📧 <span class="contact">ginobuyatti@gmail.com</span></p>
-    </div>
+    <p>For any privacy-related questions or requests:</p>
+    <p>📧 <span class="contact">hello@we-cook.app</span></p>
+
+    <footer>© 2026 WeCook. All rights reserved.</footer>
   </div>
 
-  <!-- ═══════════════ ESPAÑOL ═══════════════ -->
-  <div id="es" class="lang-section">
-    <div class="logo">🍽️</div>
-    <h1>MealMate – Política de Privacidad</h1>
-    <p class="subtitle">Última actualización: 3 de abril de 2026</p>
+  <!-- ESPAÑOL -->
+  <div class="lang-section" id="lang-es">
+    <div class="header">
+      <img src="https://ginobuyatti.github.io/personal-ai-chef-privacy/Icon%201024.png" alt="WeCook" class="logo" />
+      <div>
+        <h1>WeCook – Política de Privacidad</h1>
+        <p class="subtitle">Última actualización: 2 de mayo de 2026</p>
+      </div>
+    </div>
 
     <h2>1. Introducción</h2>
-    <p>MealMate ("nosotros", "nuestro") es una app de planificación de comidas para parejas e individuos. Esta Política de Privacidad explica cómo recopilamos, usamos y protegemos tu información personal. Al usar MealMate, aceptás esta política.</p>
-    <p><strong>Restricción de edad:</strong> MealMate no está dirigida a menores de 13 años. No recopilamos conscientemente datos personales de menores de 13 años. Si sos padre/madre o tutor y creés que tu hijo/a nos proporcionó información personal, contactanos de inmediato.</p>
+    <p>WeCook ("nosotros", "nos", "nuestro") es una app de planificación de comidas para parejas e individuos. Esta Política de Privacidad explica cómo recopilamos, usamos y protegemos tu información personal. Al usar WeCook, aceptás esta política.</p>
+    <p><strong>Restricción de edad:</strong> WeCook no está dirigida a menores de 13 años. No recopilamos conscientemente datos personales de menores de 13 años.</p>
 
     <h2>2. Datos que recopilamos</h2>
     <div class="highlight">
       <ul>
-        <li><strong>Datos de cuenta:</strong> Nombre, dirección de email, foto de perfil (vía Google Sign-In)</li>
-        <li><strong>Datos de uso:</strong> Recetas vistas, cocinadas, con like o dislike; historial de comidas; registros de macros</li>
-        <li><strong>Preferencias dietarias:</strong> Restricciones alimentarias, alergias, ingredientes preferidos, tiempo típico de cocción</li>
-        <li><strong>Datos de pareja:</strong> Cuando te vinculás con una pareja, tus propuestas, votos y recetas acordadas son visibles para tu pareja</li>
-        <li><strong>Estado de suscripción:</strong> Estado activo/cancelado de la suscripción (procesado por Apple/Google; el estado se guarda en nuestra base de datos)</li>
-        <li><strong>Datos locales del dispositivo:</strong> Las preferencias, inventario e historial también se guardan localmente en tu dispositivo via AsyncStorage</li>
-        <li><strong>Tokens de notificaciones push:</strong> Tokens del dispositivo para enviar recordatorios de comidas y notificaciones de actividad de pareja</li>
+        <li><strong>Datos de cuenta:</strong> Nombre, correo electrónico, foto de perfil (vía Google Sign-In)</li>
+        <li><strong>Datos de uso:</strong> Recetas vistas, cocinadas, likeadas o rechazadas; historial de comidas; registros de macros</li>
+        <li><strong>Preferencias dietéticas:</strong> Restricciones, alergias, ingredientes preferidos, tiempo de cocción habitual</li>
+        <li><strong>Datos de pareja:</strong> Propuestas, votos y recetas acordadas visibles para tu pareja</li>
+        <li><strong>Estado de suscripción:</strong> Estado activo/cancelado (procesado por Apple/Google)</li>
+        <li><strong>Datos locales:</strong> Preferencias e historial almacenados en tu dispositivo via AsyncStorage</li>
+        <li><strong>Tokens de notificación:</strong> Tokens de dispositivo para enviar recordatorios y notificaciones de pareja</li>
       </ul>
     </div>
 
     <h2>3. Cómo usamos tus datos</h2>
     <ul>
-      <li>Para brindarte recomendaciones personalizadas de recetas diarias</li>
+      <li>Para ofrecer recomendaciones de recetas personalizadas</li>
       <li>Para habilitar el modo pareja (propuestas, votos, acuerdos)</li>
-      <li>Para hacer seguimiento de tus macros e historial nutricional</li>
-      <li>Para enviar notificaciones push (recordatorios de comidas, propuestas de pareja, matches de recetas). Podés desactivar las notificaciones en cualquier momento desde la configuración de tu dispositivo o en la sección Perfil de la app</li>
-      <li>Para gestionar el estado de tu suscripción premium</li>
-      <li>Para mejorar la app usando analytics agregados y anonimizados</li>
+      <li>Para rastrear tus macros e historial nutricional</li>
+      <li>Para enviar notificaciones push. Podés desactivarlas en cualquier momento</li>
+      <li>Para gestionar tu suscripción premium</li>
+      <li>Para mejorar la app con analíticas anónimas y agregadas</li>
     </ul>
 
     <h2>4. Inteligencia Artificial (IA)</h2>
-    <p>MealMate usa <strong>Google Gemini AI</strong> para las siguientes funciones:</p>
+    <p>WeCook usa Google Gemini AI para:</p>
     <ul>
-      <li>Cálculo automático de macros a partir de ingredientes de recetas</li>
+      <li>Cálculo automático de macros desde ingredientes</li>
       <li>Asistente AI Chef (sugerencias de recetas conversacionales)</li>
-      <li>Generación de planes de comida semanales</li>
-      <li>Reconocimiento de alimentos por foto y análisis de macros</li>
+      <li>Generación de plan de comidas semanal</li>
+      <li>Reconocimiento de alimentos por foto</li>
     </ul>
     <div class="highlight">
-      <p>⚠️ <strong>Importante:</strong> El contenido generado por IA (recetas, estimaciones de macros, sugerencias) puede no ser 100% preciso. Siempre consultá a un nutricionista o profesional de la salud para asesoramiento dietético médico. MealMate no es una app médica.</p>
+      ⚠️ <strong>Importante:</strong> El contenido generado por IA puede no ser 100% preciso. Consultá siempre a un profesional de la salud para consejo dietético médico. WeCook no es una app médica.
     </div>
 
-    <h2>5. Notificaciones Push</h2>
-    <p>MealMate usa notificaciones push para:</p>
+    <h2>5. Servicios de terceros</h2>
     <ul>
-      <li>Recordatorios diarios de comidas (hora configurable)</li>
-      <li>Propuestas de recetas de tu pareja</li>
-      <li>Alertas de match de recetas (cuando ambos acuerdan)</li>
-    </ul>
-    <p>Podés activar o desactivar las notificaciones en cualquier momento desde la Configuración de tu dispositivo o en la sección Perfil de MealMate.</p>
-
-    <h2>6. Servicios de terceros</h2>
-    <p>Usamos los siguientes servicios de terceros. Cada uno tiene su propia política de privacidad:</p>
-    <ul>
-      <li><strong>Firebase / Google Firestore</strong> – Base de datos, autenticación y analytics. Servidores ubicados en Estados Unidos.</li>
-      <li><strong>Firebase Analytics (Google Analytics)</strong> – Analytics de uso de la app (datos de sesión, vistas de pantalla, eventos). Los datos son anonimizados y agregados.</li>
-      <li><strong>Google Gemini AI</strong> – Funciones de IA. Tus listas de ingredientes y consultas se envían a Gemini para ser procesadas.</li>
-      <li><strong>Spoonacular API</strong> – Base de datos de recetas. Las búsquedas se envían a los servidores de Spoonacular.</li>
-      <li><strong>RevenueCat</strong> – Gestión de suscripciones. Procesa el estado de tu suscripción (no los datos de pago — esos los maneja Apple/Google).</li>
-      <li><strong>Expo / EAS</strong> – Entrega de la app y actualizaciones.</li>
+      <li><strong>Firebase / Google Firestore</strong> – Base de datos y autenticación</li>
+      <li><strong>Google Gemini AI</strong> – Funciones de IA</li>
+      <li><strong>Spoonacular API</strong> – Base de datos de recetas</li>
+      <li><strong>RevenueCat</strong> – Gestión de suscripciones</li>
+      <li><strong>Resend</strong> – Envío de emails transaccionales</li>
+      <li><strong>Expo / EAS</strong> – Entrega de la app y actualizaciones</li>
     </ul>
 
-    <h2>7. Seguridad de los datos</h2>
-    <ul>
-      <li>Todos los datos en tránsito están encriptados con TLS/HTTPS</li>
-      <li>Firebase Firestore usa la encriptación en reposo estándar de Google</li>
-      <li>La autenticación es manejada por Firebase Auth (Google Sign-In OAuth 2.0)</li>
-      <li>Las API keys se guardan como secretos en nuestro sistema de build y nunca se exponen en el bundle de la app</li>
-    </ul>
+    <h2>6. Seguridad</h2>
+    <div class="highlight">
+      <ul>
+        <li>Todos los datos en tránsito están cifrados con TLS/HTTPS</li>
+        <li>Firebase usa cifrado estándar de Google en reposo</li>
+        <li>Autenticación via Firebase Auth (Google Sign-In OAuth 2.0)</li>
+        <li>Las claves API se almacenan como secrets y nunca se exponen en el bundle</li>
+      </ul>
+    </div>
 
-    <h2>8. Transferencia internacional de datos</h2>
-    <p>Firebase y los servicios de Google almacenan datos en servidores ubicados principalmente en Estados Unidos. Si estás ubicado fuera de EE.UU. (incluyendo la Unión Europea), tus datos serán transferidos y procesados en EE.UU. Al usar MealMate, consentís esta transferencia. Nos basamos en las cláusulas contractuales estándar de Google para el cumplimiento del GDPR.</p>
-
-    <h2>9. Datos compartidos con tu pareja</h2>
-    <p>Cuando te vinculás con una pareja en MealMate:</p>
+    <h2>7. Tus derechos (GDPR y CCPA)</h2>
     <ul>
-      <li>Tus propuestas de recetas y votos son visibles para tu pareja</li>
-      <li>Tus recetas acordadas y planes diarios son compartidos</li>
-      <li>Tu nombre y foto de perfil son visibles para tu pareja</li>
-      <li>Tus datos de macros y estadísticas <strong>no</strong> se comparten con tu pareja</li>
-    </ul>
-    <p>Podés desvincular a tu pareja en cualquier momento desde la sección Pareja de la app.</p>
-
-    <h2>10. Tus derechos (GDPR y CCPA)</h2>
-    <p>Según tu ubicación, podés tener los siguientes derechos:</p>
-    <ul>
-      <li><strong>Acceso:</strong> Solicitar una copia de tus datos personales</li>
-      <li><strong>Corrección:</strong> Solicitar la corrección de datos inexactos</li>
-      <li><strong>Eliminación:</strong> Eliminar tu cuenta y todos los datos asociados (procesado en 30 días)</li>
-      <li><strong>Portabilidad:</strong> Solicitar tus datos en un formato portable</li>
-      <li><strong>Opt-out:</strong> Desactivar el tracking de analytics</li>
+      <li><strong>Acceso:</strong> Solicitá una copia de tus datos</li>
+      <li><strong>Corrección:</strong> Solicitá la corrección de datos incorrectos</li>
+      <li><strong>Eliminación:</strong> Eliminá tu cuenta y todos los datos asociados (procesado en 30 días)</li>
+      <li><strong>Portabilidad:</strong> Solicitá tus datos en formato portable</li>
       <li><strong>Residentes de California (CCPA):</strong> No vendemos tu información personal a terceros</li>
     </ul>
-    <p>Para ejercer cualquiera de estos derechos, contactanos en <span class="contact">ginobuyatti@gmail.com</span>.</p>
+    <p>Para ejercer estos derechos, contactanos en <span class="contact">hello@we-cook.app</span></p>
 
-    <h2>11. Eliminación de cuenta</h2>
-    <p>Podés eliminar tu cuenta en cualquier momento desde Perfil → Zona de Peligro → Eliminar Cuenta. Esto eliminará permanentemente:</p>
-    <ul>
-      <li>Tu perfil y credenciales de autenticación</li>
-      <li>Todo el historial de comidas, recetas y datos de macros</li>
-      <li>Tu conexión de pareja y datos compartidos</li>
-    </ul>
-    <p>La eliminación de datos se procesa en 30 días. La cancelación de la suscripción debe hacerse por separado a través del App Store o Google Play.</p>
+    <h2>8. Eliminación de cuenta</h2>
+    <p>Podés eliminar tu cuenta desde <strong>Perfil → Zona de peligro → Eliminar cuenta</strong>. Esto eliminará permanentemente todos tus datos en 30 días.</p>
 
-    <h2>12. Cambios en esta política</h2>
-    <p>Podemos actualizar esta Política de Privacidad de vez en cuando. Te notificaremos de cambios significativos a través de la app o por email. La fecha "Última actualización" al inicio indica cuándo fue revisada por última vez.</p>
+    <h2>9. Cambios en esta política</h2>
+    <p>Podemos actualizar esta Política de Privacidad ocasionalmente. Te notificaremos de cambios significativos por la app o email.</p>
 
-    <h2>13. Contacto</h2>
-    <div class="highlight">
-      <p>Para cualquier consulta o solicitud relacionada con la privacidad:</p>
-      <p>📧 <span class="contact">ginobuyatti@gmail.com</span></p>
-    </div>
+    <h2>10. Contacto</h2>
+    <p>📧 <span class="contact">hello@we-cook.app</span></p>
+
+    <footer>© 2026 WeCook. Todos los derechos reservados.</footer>
   </div>
-
-  <footer>
-    <p>© 2026 MealMate. All rights reserved. / Todos los derechos reservados.</p>
-  </footer>
 
 </div>
 
 <script>
-  function switchLang(lang) {
-    document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
-    document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
-    document.getElementById(lang).classList.add('active');
-    event.target.classList.add('active');
-  }
+function setLang(lang) {
+  document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+  document.getElementById('lang-' + lang).classList.add('active');
+  event.target.classList.add('active');
+}
 </script>
 </body>
 </html>
